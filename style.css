@@ -1,0 +1,153 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    font-size: 1.6rem;
+    background: lightgray;
+}
+
+/* Error messages*/
+.err_msg {
+    color: red;
+    margin-left: 32%;
+}
+
+.container {
+    background-color: white;
+    width: 1000px;
+    max-width: 98%;
+    min-height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container header .title{
+    padding: .2em;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    color: white;
+    background-color: #1abc9c;;
+}
+
+.container header nav{
+    background-color: #333;
+}
+
+.container header ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.container header a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: block;
+    padding: .8em;
+}
+
+.container li:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* Main Content and Table */
+
+.content {
+    width: 95%;
+    margin: 1.5em auto;
+}
+
+.content .title {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: .5em;
+}
+
+table thead {
+    background: #333;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+table td, th {
+    padding: .5em;
+}
+
+table, td, th {
+    border: 2px solid #333;
+}
+
+
+.btn {
+    border: none;
+    text-decoration: none;
+    padding: .2em .5em;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-edit {
+    background: green;
+}
+
+.btn-delete {
+    background: red;
+}
+
+
+/* Form and Add Student */
+form {
+    background: #f5f5f5;
+    width: 50%;
+    margin: .5em auto;
+    border-radius: 5px;
+    padding: 1.5em;
+}
+
+form label {
+    width: 30%;
+    display: inline-block;
+    font-weight: 600;
+}
+
+form .form-group input, select{
+    width: 66%;
+    display: inline-block;
+    padding: .5em;
+}
+
+
+.btn-add {
+    text-transform: uppercase;
+    padding: .5em 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    margin-left: 32%;
+    margin-top: .5em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
